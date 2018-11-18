@@ -1,0 +1,25 @@
+<div class="clearfix">
+    <div class="modal-header model-grey-color">
+        <h4 class="modal-title">{{item.name}}</h4>
+    </div>
+    <div class="modal-body">
+        <img ng-src="{{item.img}}" class="rounded img-modal">
+        <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>{{item.name}}</dd>
+            <dt>Price</dt>
+            <dd>{{item.price}}</dd>
+            <dt>Description</dt>
+            <dd>{{item.description}}</dd>
+            <dt>Manufacturer</dt>
+            <dd>{{item.manufacturer}}</dd>
+            <dt>Condition</dt>
+            <dd>{{item.condition}}</dd>
+            <dt>Category</dt>
+            <dd>{{item.category}}</dd>
+        </dl>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-danger"  ng-click="cancelModal()"><i class="fa fa-close"></i> Close</button>
+    </div>
+</div>

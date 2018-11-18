@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona startowa</title>
+    <%include header.ejs%>
+</head>
+<body ng-app="tableApp" ng-controller="testController">
+<div class="container">
+    <h1>Angular application</h1>
+    <div ng-show="loading"><h3>Loading...</h3></div>
+    <table-directive items="products"></table-directive>
+</div>
+</body>
+</html>

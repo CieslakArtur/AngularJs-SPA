@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "img": "https://images-na.ssl-images-amazon.com/images/I/81%2Bh9mpyQmL._SX522_.jpg",
+    "name": "Samsung Galaxy S9",
+    "price": "2500",
+    "description": "Na ekranie typu Infinity Display QHD+ obejrzysz zdjęcia i filmy w wysokiej jakości. Z wyświetlaczem o przekątnej 5,8” możesz swobodnie przeglądać internet, czytać i odpowiadać na maile, a także rozmawiać ze znajomymi.",
+    "manufacturer": "Samsung",
+    "condition": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "2",
+    "img": "https://static5.mediaexpert.pl/temp/thumbs-new/2/products/945/smartfon-samsung-galaxy-s8-64gb-sm-g950-midnight-black_803945_2263684_350x350w50.jpg",
+    "name": "Samsung Galaxy S8",
+    "price": "1500",
+    "description": "Zaprojektowaliśmy smartfon na nowo, odrzucając dotychczasowe ograniczenia ekranu. Zmniejszyliśmy ramki telefonu, dzięki czemu prawie cały przedni panel wyświetla obraz. Galaxy S8 to bezkompromisowe połączenie dużego wyświetlacza i wygodnego rozmiaru telefonu.",
+    "manufacturer": "Samsung",
+    "condition": "Used",
+    "category": "Smartphones"
+  },
+  {
+    "id": "3",
+    "img": "https://rukminim1.flixcart.com/image/832/832/j3nbwy80/tablet/f/v/y/apple-mpgh2hn-a-original-imaeuqfmng7qb3ey.jpeg?q=70",
+    "name": "IPad Pro",
+    "price": "7000",
+    "description": "Nowy, sięgający krawędzi ekran przekształca iPada Pro w magiczną taflę szkła, którą możesz trzymać w dowolny sposób, żeby wyczarować, co tylko zechcesz",
+    "manufacturer": "Apple",
+    "condition": "New",
+    "category": "Tablets"
+  },
+  {
+    "id": "3",
+    "img": "https://rukminim1.flixcart.com/image/832/832/j3nbwy80/tablet/f/v/y/apple-mpgh2hn-a-original-imaeuqfmng7qb3ey.jpeg?q=70",
+    "name": "IPad Pro",
+    "price": "5000",
+    "description": "Nowy, sięgający krawędzi ekran przekształca iPada Pro w magiczną taflę szkła, którą możesz trzymać w dowolny sposób, żeby wyczarować, co tylko zechcesz",
+    "manufacturer": "Apple",
+    "condition": "Used",
+    "category": "Tablets"
+  },
+  {
+    "id": "5",
+    "img": "img/noimg.jpg",
+    "name": "Samsung Galaxy S9",
+    "price": "1200",
+    "description": "Samsung Description",
+    "manufacturer": "Samsung",
+    "condition": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "6",
+    "img": "img/noimg.jpg",
+    "name": "Samsung Galaxy S9",
+    "price": "1100",
+    "description": "Samsung Description",
+    "manufacturer": "Samsung",
+    "condition": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "7",
+    "img": "img/noimg.jpg",
+    "name": "Samsung Galaxy S9",
+    "price": "3300",
+    "description": "Samsung Description",
+    "manufacturer": "Samsung",
+    "condition": "New",
+    "category": "Smartphones"
+  },
+  {
+    "id": "8",
+    "img": "img/noimg.jpg",
+    "name": "Samsung Galaxy S9",
+    "price": "1100",
+    "description": "Samsung Description",
+    "manufacturer": "Samsung",
+    "condition": "New",
+    "category": "Smartphones"
+  }
+]

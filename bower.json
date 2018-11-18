@@ -1,0 +1,17 @@
+{
+  "name": "webstore",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Artur Cieslak"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

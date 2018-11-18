@@ -1,0 +1,70 @@
+<table st-table="display_records" st-safe-src="products" class="table table-striped">
+    <thead>
+    <tr>
+        <!--<th>Profile</th>-->
+        <th>Image</th>
+        <th><a href="#" ng-click="sortBy('name')">
+                Name <span ng-show="orderByField == 'name'"><span ng-show="!reverseSort">^</span><span
+                            ng-show="reverseSort">v</span></span>
+            </a></th>
+        <th><a href="#" ng-click="sortBy('price')">
+            Price <span ng-show="orderByField == 'price'"><span ng-show="!reverseSort">^</span><span
+                        ng-show="reverseSort">v</span></span>
+            </a></th>
+        <th><a href="#" ng-click="sortBy('manufacturer')">
+                Manufacturer <span ng-show="orderByField == 'manufacturer'"><span ng-show="!reverseSort">^</span><span
+                            ng-show="reverseSort">v</span></span>
+            </a></th>
+        <th><a href="#" ng-click="sortBy('condition')">
+                Condition <span ng-show="orderByField == 'condition'"><span ng-show="!reverseSort">^</span><span
+                            ng-show="reverseSort">v</span></span>
+            </a></th>
+        <th><a href="#" ng-click="sortBy('category')">
+                Category <span ng-show="orderByField == 'category'"><span ng-show="!reverseSort">^</span><span
+                            ng-show="reverseSort">v</span></span>
+            </a></th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <th colspan="4">
+            <input st-search placeholder="Search" class="input-sm form-control search" type="search"/>
+        </th>
+        <th>
+            <input ng-model="priceFrom" ng-change="filterByPrice()" placeholder="Price from" class="input-sm form-control search" type="number"/>
+        </th>
+        <th>
+            <input ng-model="priceTo" ng-change="filterByPrice()" placeholder="Price to" class="input-sm form-control search" type="number"/>
+        </th>
+        <th>
+            <button type="button" class="btn btn-info pull-right" ng-click="addRecord()"><i
+                        class="glyphicon glyphicon-plus">
+                </i> Add New Item
+            </button>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in display_records|orderBy:orderByField:reverseSort|filter:customFilter">
+        <td><img ng-src="{{row.img}}" class="rounded float-left img-fluid img-small"></td>
+        <td>{{row.name}}</td>
+        <td>{{row.price}}</td>
+        <td>{{row.manufacturer}}</td>
+        <td>{{row.condition}}</td>
+        <td>{{row.category}}</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-info" ng-click="viewRecord(row.id)"><i
+                            class="glyphicon glyphicon-search">
+                    </i></button>
+                <button type="button" class="btn btn-default" ng-click="editRecord(row.id)"><i
+                            class="glyphicon glyphicon-pencil">
+                    </i></button>
+                <button type="button" class="btn btn-danger" ng-click="deletRecord(row.id)"><i
+                            class="glyphicon glyphicon-trash">
+                    </i></button>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+

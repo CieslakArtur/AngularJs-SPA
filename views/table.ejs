@@ -4,24 +4,24 @@
         <!--<th>Profile</th>-->
         <th>Image</th>
         <th><a href="#" ng-click="sortBy('name')">
-                Name <span ng-show="orderByField == 'name'"><span ng-show="!reverseSort">^</span><span
-                            ng-show="reverseSort">v</span></span>
+                Name <span ng-show="orderByField == 'name'"><i ng-show="!reverseSort" class="glyphicon glyphicon-chevron-up"></i><i
+                            ng-show="reverseSort" class="glyphicon glyphicon-chevron-down"></i></span>
             </a></th>
         <th><a href="#" ng-click="sortBy('price')">
-            Price <span ng-show="orderByField == 'price'"><span ng-show="!reverseSort">^</span><span
-                        ng-show="reverseSort">v</span></span>
+            Price <span ng-show="orderByField == 'price'"><i ng-show="!reverseSort" class="glyphicon glyphicon-chevron-up"></i><i
+                        ng-show="reverseSort" class="glyphicon glyphicon-chevron-down"></i></span>
             </a></th>
         <th><a href="#" ng-click="sortBy('manufacturer')">
-                Manufacturer <span ng-show="orderByField == 'manufacturer'"><span ng-show="!reverseSort">^</span><span
-                            ng-show="reverseSort">v</span></span>
+                Manufacturer <span ng-show="orderByField == 'manufacturer'"><i ng-show="!reverseSort" class="glyphicon glyphicon-chevron-up"></i><i
+                            ng-show="reverseSort" class="glyphicon glyphicon-chevron-down"></i></span>
             </a></th>
         <th><a href="#" ng-click="sortBy('condition')">
-                Condition <span ng-show="orderByField == 'condition'"><span ng-show="!reverseSort">^</span><span
-                            ng-show="reverseSort">v</span></span>
+                Condition <span ng-show="orderByField == 'condition'"><i ng-show="!reverseSort" class="glyphicon glyphicon-chevron-up"></i><i
+                            ng-show="reverseSort" class="glyphicon glyphicon-chevron-down"></i></span>
             </a></th>
         <th><a href="#" ng-click="sortBy('category')">
-                Category <span ng-show="orderByField == 'category'"><span ng-show="!reverseSort">^</span><span
-                            ng-show="reverseSort">v</span></span>
+                Category <span ng-show="orderByField == 'category'"><i ng-show="!reverseSort" class="glyphicon glyphicon-chevron-up"></i><i
+                            ng-show="reverseSort" class="glyphicon glyphicon-chevron-down"></i></span>
             </a></th>
         <th>Action</th>
     </tr>
@@ -36,14 +36,14 @@
             <input ng-model="priceTo" ng-change="filterByPrice()" placeholder="Price to" class="input-sm form-control search" type="number"/>
         </th>
         <th>
-            <button type="button" class="btn btn-info pull-right" ng-click="addRecord()"><i
+            <button type="button" class="btn btn-outline-success pull-right" ng-click="addRecord()"><i
                         class="glyphicon glyphicon-plus">
                 </i> Add New Item
             </button>
         </th>
     </tr>
     </thead>
-    <tbody>
+    <tbody style="height: 200px; overflow-y: scroll;">
     <tr ng-repeat="row in display_records|orderBy:orderByField:reverseSort|filter:customFilter">
         <td><img ng-src="{{row.img}}" class="rounded float-left img-fluid img-small"></td>
         <td>{{row.name}}</td>
@@ -53,13 +53,13 @@
         <td>{{row.category}}</td>
         <td>
             <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-info" ng-click="viewRecord(row.id)"><i
-                            class="glyphicon glyphicon-search">
+                <button type="button" class="btn btn-outline-info" ng-click="viewRecord(row.id)"><i
+                            class="glyphicon glyphicon-info-sign">
                     </i></button>
-                <button type="button" class="btn btn-default" ng-click="editRecord(row.id)"><i
+                <button type="button" class="btn btn-outline-warning" ng-click="editRecord(row.id)"><i
                             class="glyphicon glyphicon-pencil">
                     </i></button>
-                <button type="button" class="btn btn-danger" ng-click="deletRecord(row.id)"><i
+                <button type="button" class="btn btn-outline-danger" ng-click="deleteRecord(row.id)"><i
                             class="glyphicon glyphicon-trash">
                     </i></button>
             </div>
@@ -67,4 +67,3 @@
     </tr>
     </tbody>
 </table>
-

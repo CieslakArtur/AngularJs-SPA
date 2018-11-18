@@ -5,7 +5,7 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
     var modalInstance = null;
     $scope.orderByField = 'name';
     $scope.reverseSort = false;
-    $scope.customFilter={};
+    $scope.customFilter = {};
 
     $scope.getData = function () {
         $scope.loading = true;
@@ -14,13 +14,12 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
                 $scope.products = response.data;
                 $scope.loading = false;
             });
-    }
+    };
 
     $scope.viewRecord = function (id) {
         if (id > 0) {
             var item = getJsonObjectById($scope.products, id);
             if (typeof item !== 'undefined') {
-                console.log(item);
                 modalInstance = $modal.open({
                     animation: false,
                     templateUrl: 'viewItem.ejs',
@@ -38,7 +37,7 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
                 });
             }
         }
-    }
+    };
 
     $scope.addRecord = function () {
         modalInstance = $modal.open({
@@ -52,13 +51,12 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
         modalInstance.result.then(function () {
         }, function (res) {
         });
-    }
+    };
 
     $scope.editRecord = function (id) {
         if (id > 0) {
             var item = getJsonObjectById($scope.products, id);
             if (typeof item !== 'undefined') {
-                console.log(item);
                 modalInstance = $modal.open({
                     animation: false,
                     templateUrl: 'editItem.ejs',
@@ -76,52 +74,47 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
                 });
             }
         }
-
-    }
+    };
 
     $scope.cancelModal = function () {
         modalInstance.close(false);
-    }
+    };
 
     $scope.sortBy = function (field) {
-        if ($scope.orderByField == field) {
+        if ($scope.orderByField === field) {
             $scope.reverseSort = !$scope.reverseSort;
         } else {
             $scope.orderByField = field;
             $scope.reverseSort = false;
         }
-    }
+    };
 
     $scope.filterByPrice = function () {
         //Price from
-        if($scope.priceFrom==null || $scope.priceFrom===''){
+        if ($scope.priceFrom == null || $scope.priceFrom === '') {
             delete $scope.customFilter['_priceFrom'];
-            console.log($scope.customFilter);
             return;
         }
-        $scope.customFilter['_priceFrom']=true;
-        $scope.products.forEach(function(item){
-            item['_priceFrom']=item.price>=$scope.priceFrom;
+        $scope.customFilter['_priceFrom'] = true;
+        $scope.products.forEach(function (item) {
+            item['_priceFrom'] = item.price >= $scope.priceFrom;
         });
 
         //Price to
-        if($scope.priceTo==null || $scope.priceTo===''){
+        if ($scope.priceTo == null || $scope.priceTo === '') {
             delete $scope.customFilter['_priceTo'];
-            console.log($scope.customFilter);
             return;
         }
-        $scope.customFilter['_priceTo']=true;
-        $scope.products.forEach(function(item){
-            item['_priceTo']=item.price<=$scope.priceTo;
+        $scope.customFilter['_priceTo'] = true;
+        $scope.products.forEach(function (item) {
+            item['_priceTo'] = item.price <= $scope.priceTo;
         });
-    }
+    };
 
     $scope.saveRecord = function (item) {
         item.id = getDateId();
-        console.log('item id=' + getDateId())
-        console.log(item);
         $scope.products.push(item);
-    }
+    };
 
     $scope.updateRecord = function (item) {
         var item_updated = getJsonObjectById($scope.products, item.id);
@@ -133,15 +126,13 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
         item_updated.condition = item.condition;
         item_updated.category = item.category;
         item_updated.img = item.img;
-    }
+    };
 
-    $scope.deletRecord = function (id) {
+    $scope.deleteRecord = function (id) {
         if (confirm('Are you sure you want to delete this?')) {
             removeObject($scope.products, id);
         }
-
-    }
-
+    };
     $scope.getData();
 }]);
 
@@ -151,7 +142,6 @@ tableApp.controller('itemViewController', ['$scope', '$http', 'record', function
     }
 
     init();
-
 }]);
 
 tableApp.controller('itemAddController', ['$scope', '$http', function ($scope, $http) {
@@ -181,8 +171,6 @@ tableApp.controller('itemAddController', ['$scope', '$http', function ($scope, $
             if (!angular.isDefined($scope.img) || $scope.img === '') {
                 $scope.item.img = 'img/noimg.jpg'
             }
-            console.log($scope.item);
-            console.log($scope.products);
         }
         $scope.cancelModal();
         $scope.saveRecord($scope.item);
@@ -191,16 +179,19 @@ tableApp.controller('itemAddController', ['$scope', '$http', function ($scope, $
 }]);
 
 tableApp.controller('itemEditController', ['$scope', '$http', 'record', function ($scope, $http, record) {
-    $scope.item = {};
-    $scope.item.id = record.id;
-    $scope.item.name = record.name;
-    $scope.item.price = Number(record.price);
-    $scope.item.description = record.description;
-    $scope.item.manufacturer = record.manufacturer;
-    $scope.item.condition = record.condition;
-    $scope.item.category = record.category;
-    $scope.item.img = record.img;
+    function init() {
+        $scope.item = {};
+        $scope.item.id = record.id;
+        $scope.item.name = record.name;
+        $scope.item.price = Number(record.price);
+        $scope.item.description = record.description;
+        $scope.item.manufacturer = record.manufacturer;
+        $scope.item.condition = record.condition;
+        $scope.item.category = record.category;
+        $scope.item.img = record.img;
+    }
 
+    init();
 
     $scope.updateItem = function () {
         $scope.cancelModal();

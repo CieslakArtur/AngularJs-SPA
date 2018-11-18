@@ -93,22 +93,21 @@ angular.module('tableApp.controllers', []).controller('testController', ['$scope
         //Price from
         if ($scope.priceFrom == null || $scope.priceFrom === '') {
             delete $scope.customFilter['_priceFrom'];
-            return;
+        } else {
+            $scope.customFilter['_priceFrom'] = true;
+            $scope.products.forEach(function (item) {
+                item['_priceFrom'] = item.price >= $scope.priceFrom;
+            });
         }
-        $scope.customFilter['_priceFrom'] = true;
-        $scope.products.forEach(function (item) {
-            item['_priceFrom'] = item.price >= $scope.priceFrom;
-        });
-
         //Price to
         if ($scope.priceTo == null || $scope.priceTo === '') {
             delete $scope.customFilter['_priceTo'];
-            return;
+        } else {
+            $scope.customFilter['_priceTo'] = true;
+            $scope.products.forEach(function (item) {
+                item['_priceTo'] = item.price <= $scope.priceTo;
+            });
         }
-        $scope.customFilter['_priceTo'] = true;
-        $scope.products.forEach(function (item) {
-            item['_priceTo'] = item.price <= $scope.priceTo;
-        });
     };
 
     $scope.saveRecord = function (item) {

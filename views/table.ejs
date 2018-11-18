@@ -43,7 +43,7 @@
         </th>
     </tr>
     </thead>
-    <tbody style="height: 200px; overflow-y: scroll;">
+    <tbody>
     <tr ng-repeat="row in display_records|orderBy:orderByField:reverseSort|filter:customFilter">
         <td><img ng-src="{{row.img}}" class="rounded float-left img-fluid img-small"></td>
         <td>{{row.name}}</td>

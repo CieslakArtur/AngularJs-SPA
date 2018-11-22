@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.7.5",
-    "angular-bootstrap": "^2.5.0",
     "angular-route": "^1.7.5",
     "angular-smart-table": "^2.1.11",
     "angular-ui-bootstrap": "git+https://github.com/angular-ui/bootstrap-bower.git#2.5.0",

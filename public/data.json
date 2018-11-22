@@ -41,42 +41,82 @@
   },
   {
     "id": "5",
-    "img": "img/noimg.jpg",
-    "name": "Samsung Galaxy S9",
-    "price": "1200",
-    "description": "Samsung Description",
-    "manufacturer": "Samsung",
+    "img": "https://static10.mediaexpert.pl/temp/thumbs-new/2/products/821/telewizor-lg-led-50uk6950_1100821_3667518_350x350w50.jpg",
+    "name": "LG LED 50UK6950",
+    "price": "2299",
+    "description": "Czterordzeniowy procesor niestrudzenie usuwa przeszkadzający szum i poprawia ostrość nawet podczas podnoszenia niskiej rozdzielczości do jakości bliskiej 4K.",
+    "manufacturer": "LG",
     "condition": "New",
-    "category": "Smartphones"
+    "category": "TV"
   },
   {
     "id": "6",
-    "img": "img/noimg.jpg",
-    "name": "Samsung Galaxy S9",
-    "price": "1100",
-    "description": "Samsung Description",
+    "img": "https://static6.mediaexpert.pl/temp/thumbs-new/2/products/286/telewizor-samsung-led-ue49nu7102_1221286_3559642_350x350w50.jpg",
+    "name": "SAMSUNG LED UE49NU7102",
+    "price": "1899.99",
+    "description": "Ciesz się ostrymi i wyraźnymi obrazami w telewizorze UHD 4K, który ma czterokrotnie więcej pikseli niż telewizor Full HD. Teraz możesz dostrzec najdrobniejsze szczegóły każdej sceny.",
     "manufacturer": "Samsung",
     "condition": "New",
-    "category": "Smartphones"
+    "category": "TV"
   },
   {
     "id": "7",
-    "img": "img/noimg.jpg",
-    "name": "Samsung Galaxy S9",
-    "price": "3300",
-    "description": "Samsung Description",
-    "manufacturer": "Samsung",
+    "img": "https://static8.mediaexpert.pl/temp/thumbs-new/2/products/075/telewizor-philips-led-55pus7303-12_1114075_3153651_350x350w50.jpg",
+    "name": "PHILIPS LED 55PUS7303/12",
+    "price": "2999",
+    "description": "Perfekcyjny obraz niezależnie od źródła Delektuj się programami, filmami i grami, które kochasz w telewizorze 4K UHD. Dzięki niemu cokolwiek włączysz, z dowolnego źródła będzie wyglądało wspaniale. Z telewizorem Android, bezprzewodową łącznością i systemem Ambilight, będziesz nie tylko oglądał swoje ulubione treści online, ale wręcz zatracisz się razem z nimi.",
+    "manufacturer": "Philips",
+    "condition": "New",
+    "category": "TV"
+  },
+  {
+    "id": "8",
+    "img": "https://f00.esfr.pl/foto/2/36561399161/8ac6e06396338ed370e1aebba6db2068/huawei-mate-20-pro-twilight,36561399161_7.jpg",
+    "name": "Huawei Mate 20 Pro (twilight)",
+    "price": "4299",
+    "description": "Smartfon klasy premium z ultraszybkim procesorem, wsparciem sztucznej inteligencji AI, 6 GB pamięci RAM, potrójnym aparatem Leica oraz ekranem 6,4 cala 2K+",
+    "manufacturer": "Huawei",
     "condition": "New",
     "category": "Smartphones"
   },
   {
-    "id": "8",
-    "img": "img/noimg.jpg",
-    "name": "Samsung Galaxy S9",
-    "price": "1100",
-    "description": "Samsung Description",
-    "manufacturer": "Samsung",
+    "id": "9",
+    "img": "https://f01.esfr.pl/foto/6/36568858313/b506bc79e1f69ebc35c41dda0399174c/smartfon-mi-8-lite-4-64-grey-xiaomi,36568858313_7.jpg",
+    "name": "Xiaomi MI 8 Lite 64GB (ciemno-szary)",
+    "price": "1299",
+    "description": "Smartfon wyposażono w 64 GB wbudowanej pamięci*. Zapewnia to możliwość przechowywania w pamięci urządzenia danych, zdjęć, filmów i różnego rodzaju aplikacji.",
+    "manufacturer": "Xiaomi",
     "condition": "New",
     "category": "Smartphones"
+  },
+  {
+    "id": "10",
+    "img": "https://static.komputronik.pl/product-picture/6/NBHUAMBD14-1.png",
+    "name": "Huawei MateBook",
+    "price": "2599",
+    "description": "Huawei MateBook D 14 w wariancie AMD Ryzen5/8/256, wykorzystuje czterordzeniowy (osiem wątków) procesor AMD Ryzen 5 2500U, ze zintegrowaną grafiką Radeon Vega 8. Zapewnia płynność wielozadaniowej pracy, oraz cechuje się niskim poborem energii (do 15W). Jego bazowe taktowanie 3.2GHz wzrasta w trybie turbo boost do 3.6GHz, przyspieszając pracę kluczowych procesów. Pamięć RAM 8GB odpowiada za dużą responsywność systemu oraz szybkość działania aplikacji.",
+    "manufacturer": "Huawei",
+    "condition": "New",
+    "category": "Laptops"
+  },
+  {
+    "id": "11",
+    "img": "https://static.komputronik.pl/product-picture/6/NBIBM81FK008EPB-1.png",
+    "name": "Lenovo Ideapad",
+    "price": "3599",
+    "description": "Lenovo Ideapad 330-15ICH to laptop o wszechstronnym zastosowaniu. Jego sercem jest wydajny procesor Intel Core i5, korzystający z 8GB RAM. Wyświetlacz o przekątnej 15,6” pokazuje obraz w jakości FullHD. Za generowanie obrazu odpowiada wydajna karta GeForce GTX 1050. Na dane przeznaczono szybki, pracujący bezgłośnie dysk SSD o pojemności 256GB.",
+    "manufacturer": "Lenovo",
+    "condition": "New",
+    "category": "Laptops"
+  },
+  {
+    "id": "12",
+    "img": "https://static.komputronik.pl/product-picture/6/NBIBM81FK008EPB-1.png",
+    "name": "Lenovo Ideapad",
+    "price": "2599",
+    "description": "Lenovo Ideapad 330-15ICH to laptop o wszechstronnym zastosowaniu. Jego sercem jest wydajny procesor Intel Core i5, korzystający z 8GB RAM. Wyświetlacz o przekątnej 15,6” pokazuje obraz w jakości FullHD. Za generowanie obrazu odpowiada wydajna karta GeForce GTX 1050. Na dane przeznaczono szybki, pracujący bezgłośnie dysk SSD o pojemności 256GB.",
+    "manufacturer": "Lenovo",
+    "condition": "Used",
+    "category": "Laptops"
   }
 ]
